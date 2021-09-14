@@ -16,7 +16,17 @@ Description goes here
 Here's how you make code look like code:
 
 ```python
-Code goes here
+import board
+import neopixel
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+
+print("Make it red!")
+
+while True:
+    dot.fill((255,0,0))
+
+
 
 ```
 
