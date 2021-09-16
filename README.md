@@ -85,7 +85,7 @@ while True:
 
 ### Evidence
 
-<img src="ezgif.com-gif-maker.mp4" alt="The Wiring" width="500">
+<img src="ezgif.com-gif-maker.gif" alt="The Wiring" width="500">
 
 ### Wiring
 
