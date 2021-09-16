@@ -48,6 +48,8 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 
 ### Description & Code
 
+In this assignment, we used a metro express board, a micro servo, and python coding to make the servo turn 180 degrees and then back 180 degrees. After we firgured that out, we added two loose wires to make capacitive touch controlled. 
+
 ```python
 import time
 import board
@@ -85,13 +87,15 @@ while True:
 
 ### Evidence
 
-<img src="ezgif.com-gif-maker.gif" alt="The Wiring" width="500">
+<img src="ezgif.com-gif-maker.mp4" alt="The Wiring" width="500">
 
 ### Wiring
 
 <img src="Screenshot 2021-09-16 093200.png" alt="The Wiring" width="500">
 
 ### Reflection
+
+This assignment helped me learn about the python coding language. The hardest part of this assignment was the touch capacitive part. I struggled finding the right code, but Callan and Mr. Helmstetter helped me figure it out. For other people trying this assignment I would recommend having friends around to ask and using all of the tools around you. 
 
 
 
