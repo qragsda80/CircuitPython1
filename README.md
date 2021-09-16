@@ -87,6 +87,8 @@ while True:
 
 ### Wiring
 
+<img src="images/Circuitpyth_servo.jpg" alt="The Wiring" width="100">
+
 ### Reflection
 
 
