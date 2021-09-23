@@ -148,6 +148,8 @@ while True:
 
 ### Evidence
 
+<img src="ultrasonicsensor.gif" alt="The Wiring" width="500">
+
 ### Wiring
 
 ### Reflection
