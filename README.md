@@ -4,7 +4,7 @@
 * [Table of Contents](#TableOfContents)
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
-* [CircuitPython_DistanceSensor](#CircuitPython_LCD)
+* [CircuitPython_DistanceSensor](#CircuitPython_DistanceSensor)
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
