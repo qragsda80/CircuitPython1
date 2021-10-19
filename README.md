@@ -163,7 +163,7 @@ while True:
 
 ### Wiring
 
-<img src="Ultrasonic_Distance_Sensor.jpg" alt="The Wiring" width="500">
+<img src="Ultrasonic_Distance_Sensor.JPG" alt="The Wiring" width="500">
 
 ### Reflection
 
