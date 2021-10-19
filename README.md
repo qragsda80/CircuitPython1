@@ -111,7 +111,7 @@ This assignment helped me learn about the python coding language. The hardest pa
 
 
 
-## CircuitPython_LCD
+## CircuitPython_DistanceSensor
 
 ### Description & Code
 
