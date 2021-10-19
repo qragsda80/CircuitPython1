@@ -167,7 +167,7 @@ while True:
 
 ### Reflection
 
-
+On this assignment, I struggled with my Metro Express Board not showing the color green. Mr. H helped me figure out that It was the board that was malfunctioning. One of the LED's was broken, so I figured out how to make it fade from red, to blue, and then fade out to nothing. I had fun firguring out my problem and it was cool to watch it work in the end. 
 
 
 
