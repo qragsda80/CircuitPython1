@@ -26,10 +26,10 @@ dot.brightness=0.2
 
 while True:
     print("Make it Green!")
-    dot.fill((0, 255, 0))
-    time.sleep(.5)
+    dot.fill((0, 255, 0))     #this is the RGB color value for green
+    time.sleep(.5)            #Time sleep is how long it stays on that color before switching.
     print("Make it Blue!")
-    dot.fill((0, 0, 255))
+    dot.fill((0, 0, 255))    #this is the RGB color value for blue
     time.sleep(.5)
 
 
@@ -65,7 +65,7 @@ In this assignment, we used a metro express board, a micro servo, and python cod
 import time
 import board
 import pulseio
-import touchio
+import touchio  # Import capacitive touch
 import servo
 
 # create a PWMOut object on Pin A2.
@@ -74,20 +74,20 @@ pwm = pulseio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
 # Create a servo object, my_servo.
 my_servo = servo.Servo(pwm)
 
-touch_pad1 = board.A0  # Will not work for Circuit Playground Express!
+touch_pad1 = board.A0  # Will not work for Circuit Playground Express!   (Orange wire)
 touch1 = touchio.TouchIn(touch_pad1)
-touch_pad2 = board.A5  # Will not work for Circuit Playground Express!
+touch_pad2 = board.A5  # Will not work for Circuit Playground Express!   (White wire)
 touch2 = touchio.TouchIn(touch_pad2)
 
 while True:
 
-    if touch1.value:
-        print("Touched the White Wire!")
+    if touch1.value:      # This is the orange wire
+        print("Touched the Orange Wire!")
         for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
             my_servo.angle = angle
             time.sleep(0.05)
-    if touch2.value:
-        print("Touched the Green Wire!")
+    if touch2.value:     # This is the gray wire
+        print("Touched the Gray Wire!")
         for angle in range(180, 0, -5):  # 180 - 0 degrees, 5 degrees at a time
             my_servo.angle = angle
             time.sleep(0.05)
@@ -118,7 +118,7 @@ This assignment helped me learn about the python coding language. The hardest pa
 ```python
 import time
 import board
-import neopixel
+import neopixel  # (the led dot on the board)
 import simpleio
 import adafruit_hcsr04
 
@@ -131,24 +131,24 @@ while True:
     try:
         cm = sonar.distance
         print((cm))
-        if cm < 5:
+        if cm < 5:  # If distance is less than 5 cm
             r = 255
             g = 0
             b = 0
             print("red!")
-        elif cm < 20:
-            print("red or blue")
+        elif cm < 20:   # If distance is less than 20 cm
+            print("red or blue")  # Fades from red to blue from 5 cm to 20 cm. (Color is blue at 20 cm)
             r = simpleio.map_range(cm, 5, 20, 255, 0)
             g = 0 
             b = simpleio.map_range(cm, 5, 20, 0, 255)
         
-        elif cm < 35:
-            print("blue or green")
+        elif cm < 35:    # If distance is less than 35 cm
+            print("blue or fade out")      # Fades from blue to nothing from 20cm to 35cm 
             r = 0
             g = simpleio.map_range(cm, 20, 35, 0, 255)
             b = simpleio.map_range(cm, 20, 35, 255, 0)
         else:
-            print("green")
+            print("nothing")
         dot.fill((int(r), int(g), int(b)))
         
     except RuntimeError:
