@@ -11,9 +11,6 @@
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
-
-Here's how you make code look like code:
 
 ```python
 import board
